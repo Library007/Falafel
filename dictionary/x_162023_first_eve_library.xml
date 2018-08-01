@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" label="Library" max_length="40" name="x_162023_first_eve_library" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="BioTech" sequence="0" value="biotech"/>
+                <element inactive_on_update="false" label="BioEngg" sequence="1" value="bioengg"/>
+                <element inactive_on_update="false" label="BioInfo" sequence="2" value="bioinfo"/>
+            </choice>
+        </element>
+        <element label="No of books with user" max_length="40" name="u_integer_5" type="integer"/>
+        <element label="No of books with user" max_length="40" name="u_integer_8" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Student name" mandatory="true" max_length="125" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Book name" mandatory="true" max_length="255" name="u_string_4" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Student name" max_length="40" name="u_string_6" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Book name" max_length="40" name="u_string_7" type="string"/>
+    </element>
+</database>
